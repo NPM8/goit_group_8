@@ -1,0 +1,15 @@
+{
+  "name": "goit_group_8",
+  "version": "1.0.0",
+  "description": "** Description     This respository containse code and presentation for group 8",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build --public-url goit_group_8 **/*.html",
+    "start": "parcel **/*.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}

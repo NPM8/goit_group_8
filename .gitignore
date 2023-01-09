@@ -1,0 +1,12 @@
+# Edir enviroments variables
+.vscode
+.idea
+
+# Node js data
+node_modules
+
+
+# outpur of the build
+dist
+.parcel-cache
+
