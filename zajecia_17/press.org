@@ -7,6 +7,13 @@
    To pozwala na lepsze wykorzystanie zasobów systemu i umożliwia lepsze wykonywanie wielu zadań jednocześnie.
 ** Wykonywanie w czasie
 *** setTimeout
+      =setTimeout= - wywołuje funkcję po upływie określonego czasu.
+      pierwszy argument - funkcja, która ma być wywołana
+      drugi argument - czas w milisekundach
+      reszta argumentów - argumenty przekazywane do funkcji wykonywanej
+
+      #+REVEAL: split
+
       #+BEGIN_SRC javascript
         setTimeout(function() {
           console.log("Hello");
@@ -15,11 +22,14 @@
  
       #+results:
  
-      =setTimeout= - wywołuje funkcję po upływie określonego czasu.
+*** setInterval
+      =setInterval= - wywołuje funkcję co określony czas.
       pierwszy argument - funkcja, która ma być wywołana
       drugi argument - czas w milisekundach
       reszta argumentów - argumenty przekazywane do funkcji wykonywanej
-*** setInterval
+
+      #+REVEAL: split
+
       #+BEGIN_SRC javascript
         setInterval(function() {
           console.log("Hello");
@@ -27,12 +37,12 @@
       #+END_SRC
 
       #+results:
-
-      =setInterval= - wywołuje funkcję co określony czas.
-      pierwszy argument - funkcja, która ma być wywołana
-      drugi argument - czas w milisekundach
-      reszta argumentów - argumenty przekazywane do funkcji wykonywanej
 *** clearTimeout
+      =clearTimeout= - anuluje wywołanie funkcji po upływie czasu.
+      pierwszy argument - id funkcji, która ma być anulowana
+
+      #+REVEAL: split
+
       #+BEGIN_SRC javascript
         const id = setTimeout(function(what, name) {
           console.log(what, name);
@@ -44,25 +54,24 @@
 
       #+results:
 
-      =clearTimeout= - anuluje wywołanie funkcji po upływie czasu.
-      pierwszy argument - id funkcji, która ma być anulowana
-
 ** Daty
 *** Tworzenie Daty
-        #+begin_src javascript
-          const date1 = new Date(0);
+    =Date= - obiekt reprezentujący datę i czas.
 
-          const date2 = new Date(123);
+    #+REVEAL: split
 
-          const date3 = new Date(2019, 0, 1, 0, 0, 0, 0);
+    #+begin_src javascript
+        const date1 = new Date(0);
 
-          const date4 = new Date("2019-01-01T00:00:00.000Z");
-          
-          const date5 = new Date("2019-01-01T00:00:00.000+02:00");
-          
-          console.log(date1, date2, date3, date4, date5);
-        #+end_src
+        const date2 = new Date(123);
 
-        #+results:
+        const date3 = new Date(2019, 0, 1, 0, 0, 0, 0);
 
-        ==Date== - obiekt reprezentujący datę i czas.
+        const date4 = new Date("2019-01-01T00:00:00.000Z");
+
+        const date5 = new Date("2019-01-01T00:00:00.000+02:00");
+
+        console.log(date1, date2, date3, date4, date5);
+    #+end_src
+
+    #+results:
