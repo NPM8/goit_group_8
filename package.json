@@ -5,11 +5,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build --public-url goit_group_8 **/*.html",
+    "prestart": "rimraf dist",
     "start": "parcel **/*.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "2.8.2",
+    "rimraf": "3.0.2"
   }
 }
